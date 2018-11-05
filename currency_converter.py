@@ -12,3 +12,5 @@ def convert(list, value, original, to):
             return value * conversion[2]
         if original == conversion[1] and to == conversion[0]:
             return value / conversion[2]    
+
+    raise ValueError(f"Can't convert {original} to {to}")
