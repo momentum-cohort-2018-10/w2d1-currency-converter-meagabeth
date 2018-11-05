@@ -13,6 +13,7 @@ def test_convert():
     assert convert(rates, 0.74, "EUR", "USD") == 1
     assert convert(rates, 1, "EUR", "EUR") == 1
     assert round(convert(rates, 1, "EUR", "JPY"), 2) == 145.95
+    assert round(convert(rates, 145.949, "JPY", "EUR"), 2) == 1
 
 
 def test_converting_with_no_rates():
