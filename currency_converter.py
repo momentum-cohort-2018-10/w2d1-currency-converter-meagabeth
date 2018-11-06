@@ -14,3 +14,11 @@ def convert(list, value, original, to):
             return value / conversion[2]    
 
     raise ValueError(f"Can't convert {original} to {to}")
+
+
+print(convert(rates, 1, "USD", "EUR"))
+print(convert(rates, 10, "USD", "EUR"))
+print(convert(rates, 0.74, "EUR", "USD"))
+print(convert(rates, 1, "EUR", "EUR"))
+print(round(convert(rates, 1, "EUR", "JPY"), 2))
+print(round(convert(rates, 145.949, "JPY", "EUR"), 2))
